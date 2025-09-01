@@ -1,0 +1,4 @@
+/.env
+/chroma_db
+/explanation.md
+/__pycache__
