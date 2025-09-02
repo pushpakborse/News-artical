@@ -68,8 +68,8 @@ class RAGSystem:
         return False
     
     def query(self, question, top_k=3):
-        # Retrieve relevant chunks with better filtering
-        results = self.embedding_manager.search(question, top_k, similarity_threshold=0.4)
+        # Retrieve relevant chunks
+        results = self.embedding_manager.search(question, top_k)
         
         if not results['documents'][0]:
             return "No relevant information found in the database."
